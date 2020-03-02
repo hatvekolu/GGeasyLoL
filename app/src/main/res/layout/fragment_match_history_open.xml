@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.antika.berk.ggeasy.fragment.MatchHistoryOpenFragment"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/menu"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/match_history"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp"
+            android:textStyle="normal|bold" />
+    </RelativeLayout>
+
+    <View
+        android:layout_height="2dp"
+        android:layout_width="fill_parent"
+        android:background="@color/secondary_text"
+        android:layout_margin="10dp" />
+
+    <ListView
+        android:id="@+id/history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

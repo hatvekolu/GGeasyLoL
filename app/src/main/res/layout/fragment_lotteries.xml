@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.antika.berk.ggeasy.fragment.LotteriesFragment"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/menu" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/lotteries"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp"
+            android:textStyle="normal|bold" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignRight="@+id/textView"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/profile" />
+    </RelativeLayout>
+
+    <View
+        android:layout_height="2dp"
+        android:layout_width="fill_parent"
+        android:background="@color/secondary_text"
+        android:layout_margin="10dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_view" />
+
+</LinearLayout>

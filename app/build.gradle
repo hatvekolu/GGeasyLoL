@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "25.0.1"
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.antika.berk.ggeasy"
+        minSdkVersion 15
+        targetSdkVersion 28
+        multiDexEnabled true
+        versionCode 71
+        versionName "4.7.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        jcenter()
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.github.ybq:Android-SpinKit:1.1.0'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.google.android.gms:play-services:11.0.4'
+    compile 'it.sephiroth.android.library.picasso:picasso:2.5.2.4b'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.mobstac.circularimageprogress:CircularImageProgressView:0.1.2'
+    compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+    compile 'com.sdsmdg.tastytoast:tastytoast:0.1.1'
+    compile 'com.adcolony:sdk:3.3.11'
+    compile 'com.github.dmallcott:DismissibleImageView:1.0.1'
+    testCompile 'junit:junit:4.12'
+}
+
+apply plugin: 'com.google.gms.google-services'
+
+
+
+
+
+
+
+
+
+
+
+
+

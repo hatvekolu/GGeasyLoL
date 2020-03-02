@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.antika.berk.ggeasy.fragment.ChallangeFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:id="@+id/imageView32"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/profile"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/textView31"
+            android:layout_alignEnd="@+id/textView31" />
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/textView31"
+            android:layout_alignLeft="@+id/textView31"
+            android:layout_alignStart="@+id/textView31"
+            app:srcCompat="@drawable/menu" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp"
+            android:textStyle="normal|bold" />
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        app:backgroundTint="@color/wallet_link_text_light"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/plus" />
+
+    <ListView
+        android:id="@+id/challengeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout" />
+</RelativeLayout>

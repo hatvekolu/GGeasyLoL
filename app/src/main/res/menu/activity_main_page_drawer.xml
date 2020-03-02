@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/current_icon"
+            android:title="@string/current_match" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/sumonners_icon"
+            android:title="@string/summoner" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/history"
+            android:title="@string/match_history" />
+        <item
+            android:id="@+id/nav_challenge"
+            android:icon="@drawable/challenge_icon"
+            android:title="@string/challenge" />
+
+        <item
+            android:id="@+id/nav_skill"
+            android:icon="@drawable/fourskill"
+            android:title="@string/four_skill" />
+
+
+
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/champions_icon"
+            android:title="@string/champions" />
+        <item
+            android:id="@+id/nav_lottery"
+            android:icon="@drawable/lottery_icon"
+            android:title="@string/lotteries" />
+
+
+    </group>
+
+    <item
+        android:title="@string/comunicate"
+        android:visible="false">
+        <menu>
+            <item
+                android:id="@+id/facebook"
+                android:icon="@drawable/facebook_logo"
+                android:title="Facebook" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/rate_icon"
+                android:title="@string/rate" />
+        </menu>
+    </item>
+
+</menu>

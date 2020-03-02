@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.antika.berk.ggeasy.fragment.JoinLotteryFragment">
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/summoner_name"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/join_lottery"
+        android:textAllCaps="false"
+        android:textColor="@color/cast_expanded_controller_progress_text_color"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+</LinearLayout>

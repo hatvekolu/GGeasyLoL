@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.antika.berk.ggeasy.fragment.ChampionTabFragment"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/menu" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/champions"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp"
+            android:textStyle="normal|bold" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignRight="@+id/textView"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/profile" />
+    </RelativeLayout>
+
+    <View
+        android:layout_height="2dp"
+        android:layout_width="fill_parent"
+        android:background="@color/secondary_text"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <android.support.v4.app.FragmentTabHost
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/realtabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="60dp"/>
+
+        </LinearLayout>
+    </android.support.v4.app.FragmentTabHost>
+
+</LinearLayout>
